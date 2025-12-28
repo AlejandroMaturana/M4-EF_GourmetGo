@@ -1,0 +1,100 @@
+/* style.css */
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #373838;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  min-height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)),
+    url('../IMG/hero.webp') center/cover no-repeat;
+  color: white;
+  position: relative;
+}
+
+.search-form input {
+  max-width: 500px;
+  border-radius: 50px;
+  padding-left: 1.5rem;
+}
+
+.search-form button {
+  border-radius: 50px;
+  background-color: #28a745;
+  border: none;
+  font-weight: 600;
+}
+
+.search-form button:hover {
+  background-color: #218838;
+}
+
+#title {
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+  background: linear-gradient(45deg, #f8fffe, #d2df6b, #f8fffe);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#seccionR {
+  color: #f8fffe;
+}
+
+/* TARJETAS */
+.recipe-card {
+  background-color: #454747;
+  color: antiquewhite;
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.recipe-card img {
+  height: 240px;
+  object-fit: cover;
+}
+
+.recipe-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-card .btn-primary {
+  background-color: #28a745;
+  border: none;
+  border-radius: 50px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+}
+
+.recipe-card .btn-primary:hover {
+  background-color: #218838;
+}
+
+/* Responsividad extra */
+@media (max-width: 576px) {
+  .hero {
+    height: 80vh;
+  }
+
+  .search-form {
+    padding: 0 1rem;
+  }
+
+  .search-form input,
+  .search-form button {
+    width: 100%;
+  }
+}
